@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="assets/javascript/easy-autocomplete.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="assets/javascript/jquery.easy-autocomplete.min.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+      rel="stylesheet"
+    />
+
+    <title>Brew[array]</title>
+  </head>
+
+  <body>
+    <div id="p0" class="image1 overlay">
+      <div class="image-home">
+        <img id="beer-image" src="images/beer-white.png" />
+        <span class="border">
+          Brew[array]
+        </span>
+        <br />
+        <a href="#p4"> <button class="button">Search</button></a>
+        <a class="scroll" href="#p5">|</a>
+        <a href="#p1"> <button class="button">Events</button></a>
+        <a class="scroll" href="#p5">|</a>
+        <!-- <a href="#p2"> <button class="button">Favorites</button></a>
+        <a class="scroll" href="#p5">|</a> -->
+        <a href="#p3" id="signUp2"> <button class="button">Sign Up</button></a>
+        <a class="scroll" href="#p5" id="p6">|</a>
+        <a href="#id02" id="logIn"> <button class="button">Sign in</button></a>
+        <a class="scroll" href="#p5">|</a>
+        <a href="#" id="signOut">
+          <button class="button" onclick="logout()">Sign out</button></a
+        >
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <h2>About</h2>
+      <p id="about">
+        <strong>Brew[array]</strong> was designed to make searching for
+        breweries around the United States much easier. Whether you are
+        traveling for work, visiting family, or just looking for new breweries
+        around your city, <strong>Brew[array]</strong> is your guide to
+        expanding your brew search and exploring any beer events around the
+        area. No need to search multiple websites to find awesome breweries, let
+        <strong>Brew[array]</strong> be your one stop shop so you can enjoy your
+        day faster. So what are you waiting for? Fill out the search field below
+        for great beer and great times! Cheers!
+      </p>
+      <div id="p4"></div>
+    </section>
+    <!-- <div></div> -->
+
+    <div class="image5">
+      <div class="image-text">
+        <span class="header">
+          Search For Delicious Beer!
+        </span>
+        <br class="break" />
+        <br />
+        <a href="#p0"> <button class="homebutton">Home</button> </a>
+      </div>
+    </div>
+
+    <div class="section section-light search form-center ">
+      <div class="form-center" id="left-side">
+        <h2>Search</h2>
+        <form id="search-input">
+          <p></p>
+
+          <input type="text" id="data-remote" placeholder="Brewery Name" />
+
+          <input type="text" id="city" placeholder="City" />
+
+          <input type="text" id="state" placeholder="State" />
+
+          <br />
+
+          <button class="smallbutton">Locate!</button>
+        </form>
+      </div>
+      <!-- <div
+        id="map-container-google-1"
+        class="z-depth-1-half map-container"
+      >
+        <iframe
+          src="https://maps.google.com/maps?q=sacramento&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
+      </div> -->
+
+      <div class="justify-content-center" >
+        <div id="brewery-info"></div>
+      </div>
+    </div>
+
+    <div id="p1"></div>
+
+    <div class="image2">
+      <div class="image-text text-01">
+        <span class="header">
+          Find brewery events in your area!
+        </span>
+        <br class="break" />
+        <br />
+        <a href="#p0"> <button class="homebutton">Home!</button> </a>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <h2>Events</h2>
+
+      <div id="events"></div>
+    </section>
+    <div id="p2"></div>
+
+    <!-- <div class="image3">
+      <div class="image-text text-01">
+        <span class="header">
+          Add Your Favorite Breweries!
+        </span>
+        <br class="break" />
+        <br />
+        <a href="#p0"> <button class="homebutton">Home!</button> </a>
+      </div>
+    </div>
+
+    <section class="section section-light">
+      <h2>Community favorite breweries</h2>
+      <p id="favorites">
+        Sign in to help build a list of the Brew[array] community's favorite
+        breweries
+      </p>
+
+      <br />
+      <div id="favBrew"></div>
+    </section> -->
+    <div id="p3"></div>
+
+    <div class="image4" id="image4">
+      <div class="image-text">
+        <span class="header">
+          Sign Up!
+        </span>
+        <br class="break" />
+        <br />
+        <!---<a href="#p0">
+                <button class="homebutton">Home!</button> </a> -->
+      </div>
+    </div>
+
+    <section class="section section-dark" id="section">
+      <h2 id="p4">Sign Up</h2>
+      <button class="modalButton" id="signUp">Sign Up</button>
+
+      <div id="id01" class="modal">
+        <form class="modal-content" id="signUpForm">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <div id="alert" class="alert">Welcome to Brewarray!</div>
+
+            <p>Please fill in this form to create an account.</p>
+            <hr />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="password"
+              required
+            />
+
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <button type="submit" class="signup" id="btnSignup">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="section2">
+      <div id="id02" class="modal">
+        <form class="modal-content" id="signInForm">
+          <div class="container">
+            <h1>Sign in</h1>
+            <div class="alert2">You are now Signed in to Brewarray</div>
+            <p>Enter your sign in info.</p>
+            <hr />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              id="email2"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="password2"
+              required
+            />
+
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('id02').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <button type="submit" class="signin" id="btnLogin">
+                Sign In
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="image1">
+      <div class="image-text">
+        <a href="#" id="signOut2">
+          <button class="button" onclick="logout()">Sign out</button></a
+        >
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script src="./assets/javascript/firebase.js"></script>
+  </body>
+</html>
