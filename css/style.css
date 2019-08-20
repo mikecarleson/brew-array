@@ -516,6 +516,9 @@ hr {
   .break {
     display: none;
   }
+  input {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 560px) {
