@@ -18,6 +18,8 @@ html {
   color: #666;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll; 
+  -webkit-overflow-scrolling: touch;
 }
 
 .image1,
