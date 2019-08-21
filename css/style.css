@@ -65,7 +65,8 @@ body:before {
 }
 
 .image3 {
-  background-image: url(../images/samples.jpg);
+  background-image: url(../images/brewery.jpg);
+
   min-height: 300px;
   display: flex;
   align-items: center;
@@ -83,7 +84,7 @@ body:before {
 }
 
 .image5 {
-  background-image: url(../images/brewery.jpg);
+  background-image: url(../images/samples.jpg);
   min-height: 300px;
   display: flex;
   align-items: center;
