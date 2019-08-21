@@ -49,6 +49,10 @@ body:before {
 .image1 {
   background-image: url(../images/tray-black.jpg);
   min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
 }
 
 .image2 {
@@ -70,7 +74,7 @@ body:before {
 }
 
 .image4 {
-  background-color: whitesmoke;
+  background-color: white;
   min-height: 300px;
   display: flex;
   align-items: center;
@@ -86,8 +90,6 @@ body:before {
   justify-content: center;
   flex-direction: column; 
 
-  content: "";
-  z-index: -10;
 }
 
 /* // Main Header // */
@@ -196,14 +198,14 @@ h2 {
 }
 
 .homebutton {
-  background-color: white;
+  background-color: transparent;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid grey;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-size: 14px;
   letter-spacing: 2px;
-  color: black;
+  color: grey;
   cursor: pointer;
   margin: 20px;
 }
@@ -524,6 +526,10 @@ hr {
 
 .signup-header {
   color: teal;
+}
+
+.bottom-header {
+  margin-top: 5vh;
 }
 
 /* Media Query Section  */
