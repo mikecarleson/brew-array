@@ -26,7 +26,7 @@ html {
 .image4,
 .image5 {
   position: relative;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,21 +41,37 @@ html {
 .image2 {
   background-image: url(../images/bottles.jpg);
   min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
 }
 
 .image3 {
   background-image: url(../images/samples.jpg);
   min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
 }
 
 .image4 {
   background-image: url(../images/cheers.jpg);
   min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
 }
 
 .image5 {
   background-image: url(../images/brewery.jpg);
   min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
 }
 
 /* // Main Header // */
@@ -120,8 +136,8 @@ a {
 
 .section-dark,
 .section-light {
-  background-color: rgb(39, 45, 46);
-  color: white;
+  background-color: whitesmoke;
+  color: grey;
 }
 
 #about {
@@ -157,7 +173,10 @@ h2 {
   font-size: 60px;
   color: white;
   padding: 10px;
-  margin-top: 100px;
+  text-align: center;
+  display: inline-block;
+
+  
 }
 
 .homebutton {
@@ -170,7 +189,12 @@ h2 {
   letter-spacing: 2px;
   color: black;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin: 20px;
+}
+
+.center-btn {
+  text-align: center;
+  display: inline-block;
 }
 /* Search Field */
 #left-side {
@@ -190,9 +214,9 @@ h2 {
 .click {
   background-color: transparent;
   padding: 10px;
-  border: 1px solid white;
-  margin-right: 10px;
-  color: white;
+  border: 1px solid grey;
+  /* margin-right: 10px; */
+  color: grey;
   font-weight: bold;
 }
 /* Dark Box With Text Overlay */
@@ -219,6 +243,7 @@ h2 {
   text-transform: initial;
   font-size: 20px;
   font-weight: bold;
+  color: teal;
 }
 
 h1 {
@@ -271,12 +296,12 @@ address {
 .smallbutton {
   background-color: transparent;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid grey;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-size: 14px;
   letter-spacing: 2px;
-  color: white;
+  color: grey;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -284,12 +309,12 @@ address {
 #results {
   background-color: transparent;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid red;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-size: 14px;
   letter-spacing: 2px;
-  color: white;
+  color: red;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -297,12 +322,12 @@ address {
 #last-page {
   background-color: transparent;
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid red;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   font-size: 14px;
   letter-spacing: 2px;
-  color: white;
+  color: red;
   cursor: pointer;
   margin-bottom: 20px;
   margin-right: 10px;
